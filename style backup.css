@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: #80cbc4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #80cbc4;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #444;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.hero-text p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+.about-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-pic {
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.skills li {
+  background: #1e1e1e;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+section:last-of-type a {
+  color: #ffffff;
+}
+
+section:last-of-type a:hover {
+  color: #80cbc4;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.project-nav a {
+  background-color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.project-nav a:hover {
+  background-color: #333;
+}
+
+.contact-footer p,
+.contact-footer a {
+  color: #ffffff;
+  font-size: 0.95rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  color: #80cbc4;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}/* Layout for blog with vertical sidebar */
+.blog-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Sidebar styling */
+.sidebar-nav {
+  position: sticky;
+  top: 2rem;
+  min-width: 200px;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  height: fit-content;
+}
+
+.sidebar-nav h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Blog content */
+.blog-content {
+  flex: 1;
+}
+
+/* Optional: adjust for small screens */
+@media (max-width: 768px) {
+  .blog-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-nav {
+    position: static;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
