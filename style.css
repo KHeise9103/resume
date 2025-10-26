@@ -249,3 +249,33 @@ footer {
   color: #002147;
 }
 
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  background-color: #003366; /* Mayo blue */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 14px 18px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #002147;
+  transform: scale(1.1);
+}
+
+/* Visible state when scrolled */
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
