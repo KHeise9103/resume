@@ -364,3 +364,19 @@ img {
 .blog-content {
   min-width: 0;
 }
+
+/* More space between sidebar and content — blog page only */
+.blog-page .blog-layout {
+  gap: 2.5rem;  /* was 2rem */
+}
+
+@media (min-width: 1100px) {
+  .blog-page .blog-layout {
+    gap: 3rem;
+  }
+}
+
+/* Slight extra padding on the sidebar’s right side for comfort */
+.blog-page .sidebar-nav {
+  padding-right: 1.25rem; /* was 1rem */
+}
