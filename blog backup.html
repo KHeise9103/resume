@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<body class="blog-page">
 
-<body>
   <div class="container">
 
     <!-- Header Navigation -->
@@ -27,7 +27,8 @@
       <aside class="sidebar-nav">
         <h3>Blog Posts</h3>
         <ul>
-          <li><a href="#roundingtool">ICU Rounding Tool</a></li>
+          <li><a href="#ehrmiddleware">When the EHR Becomes Middleware</a></li>
+          <li><a href="#ai-summit">AI Summit</a></li>
           <li><a href="#stayconf">Stay Conference</a></li>
           <li><a href="#rapid">RAPID Framework</a></li>
         </ul>
@@ -38,10 +39,44 @@
           <h1>Blog</h1>
           <p>Short reflections, insights, and ideas from the intersection of critical care, technology, and innovation.</p>
         </section>
-        <section class="blog-post" id="roundingtool">
+
+        <!-- New Post: When the EHR Becomes Middleware -->
+        <section class="blog-post" id="ehrmiddleware">
+          <h2>When the EHR Becomes Middleware: The Future of Clinical Intelligence</h2>
+          <img 
+            src="assets/A_digital_graphic_visually_exploring_the_concept_o.png" 
+            alt="When the EHR Becomes Middleware" 
+            class="blog-banner"
+          />
+          <p><em>October 2025</em></p>
+          <p>
+            As artificial intelligence evolves, the electronic health record (EHR) will no longer serve as the <em>primary interface</em> between clinicians and data — it will become the <strong>middleware</strong> that connects everything else.
+          </p>
+          <p>
+            Today, clinicians spend too much time documenting, searching, and reconciling information that systems should already know. But in the near future, documentation will be <strong>ambient</strong> — captured automatically through voice, motion, and contextual awareness during patient interactions. AI will recognize not only words, but <strong>intent</strong>, <strong>emotion</strong>, and <strong>physiologic signals</strong>, building a complete narrative of the encounter without interrupting the flow of care.
+          </p>
+          <p>
+            In that model, the EHR becomes a <strong>translator</strong>, not a destination — the engine that harmonizes structured data from wearables, sensors, devices, and human interaction into a coherent clinical record. It becomes invisible, yet indispensable.
+          </p>
+          <p>
+            When that happens, the true measure of a successful digital system won’t be how much we <em>enter</em> into it, but how seamlessly it <em>understands</em> what’s happening in real time.
+          </p>
+          <p>
+            The challenge for healthcare leaders isn’t just building smarter systems — it’s building systems clinicians can trust. Technology should amplify human connection, not replace it. The organizations that succeed will be those that combine ethical AI, thoughtful design, and clinical wisdom into one intelligent, learning infrastructure.
+          </p>
+          <blockquote>
+            <em>“The future of the EHR isn’t documentation. It’s translation.”</em>
+          </blockquote>
+          <p class="project-tags">AI • EHR Evolution • Clinical Intelligence</p>
+        </section>
+
+        <hr style="border: 0.5px solid #ddd; margin: 2em 0;">
+
+        <!-- AI Summit Post -->
+        <section class="blog-post" id="ai-summit">
           <h2>Adaptive Early Warning at the Mayo Clinic AI Summit</h2>
           <p><em>July 2025</em></p>
-          <img src="assets/summit.png" alt="Mayo Clinic AI Summit Poster Presentation" style="max-width: 100%; height: auto; margin: 1em 0;" />
+          <img src="assets/summit.png" alt="Mayo Clinic AI Summit Poster Presentation" class="blog-banner" />
           <p>
             Today I had the opportunity to present my poster at the Mayo Clinic AI Summit on a project close to my heart: using adaptive time frames and volatility metrics to improve early warning systems for patient deterioration.
           </p>
@@ -61,15 +96,6 @@
             More to come soon. I’m always up for collaborating on meaningful projects at the intersection of care and computation.
           </p>
           <p class="project-tags">AI Summit • Predictive Modeling • Patient Deterioration</p>
-        </section>
-        <section class="blog-post" id="roundingtool">
-          <h2>Making ICU Best Practices Automatic</h2>
-          <p><em>July 2025</em></p>
-          <p>
-            Our medical ICU had a rounding tool — but it was paper-based, hard to track, and easy to skip. We built a fully electronic version directly in Epic that made it easier for teams to follow best practices like sedation vacations and mobility checks without adding clicks or extra documentation.
-            Now it's being scaled across the hospital to improve rounding consistency and reduce variation — one checklist item at a time.
-          </p>
-          <p class="project-tags">Automation • Clinical Quality • Epic Build</p>
         </section>
 
         <section class="blog-post" id="stayconf">
@@ -95,7 +121,6 @@
     </div>
 
     <!-- Footer -->
-    <!-- Footer -->
     <footer>
       <hr />
       <nav class="footer-nav">
@@ -114,5 +139,26 @@
     </footer>
 
   </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- JavaScript for Back to Top -->
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    };
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
 </body>
 </html>
