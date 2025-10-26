@@ -376,3 +376,8 @@ img {
   }
 }
 
+/* Slight extra padding on the sidebar’s right side for comfort */
+.blog-page .sidebar-nav {
+  padding-right: 1.25rem; /* was 1rem */
+}
+
