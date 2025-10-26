@@ -381,3 +381,23 @@ img {
   padding-right: 1.25rem; /* was 1rem */
 }
 
+/* Thin divider that visually separates the sidebar from content */
+.blog-page .blog-layout {
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .blog-page .blog-layout::before {
+    content: "";
+    position: absolute;
+    /* position divider at the right edge of the sidebar + some space */
+    left: 200px;                 /* sidebar min-width */
+    transform: translateX(1.25rem); /* matches the gap visually (tweak if needed) */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #2a2a2a; /* subtle dark theme divider */
+    pointer-events: none;
+  }
+}
+
